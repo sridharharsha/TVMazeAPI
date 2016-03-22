@@ -1,1 +1,1 @@
-# TVMazeAPI
+A Node-Angular Javascript Project
