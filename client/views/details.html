@@ -1,0 +1,25 @@
+
+<div class = "container">
+
+<div class="col-xs-6">
+    <h2 style="color: #efefef;">{{showDetails.name}}</h2>
+    <span style="color: #efefef;" ng-repeat="genre in showDetails.genres">{{genre}} | </span>
+
+    <div style="margin-top:2%;">
+      <img ng-src = "{{showDetails.image.medium}}"/>
+    </div>
+</div>
+<div class="col-xs-6" >
+
+	<h4 style="color: #efefef;">Summary</h4>
+  <div style="border-top:1px white; border-style:solid;">
+    <br>
+	<p style="color: #efefef;" ng-bind-html = "showDetails.summary | trustHTML"></p>
+  <br>
+  <h4 style="color: #efefef;">Cast</h4>
+  </div>
+</div>
+
+<div cast-directive character = "showDetails._embedded"> </div>
+
+</div>

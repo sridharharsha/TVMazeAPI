@@ -1,0 +1,13 @@
+<br>
+<div  ng-if = "character">
+	<div class="row" >
+<div class="col-xs-6 pull-right">
+		<ul style="border-top:1px white; border-style:solid;">
+			<br>
+				<li class = "resultList" ng-repeat="result in character.cast"><img ng-src = {{result.person.image.medium||"/images/default.png"}} style="height:10%;width:10%;"/>
+				<span style="color: #efefef;">{{result.person.name}} ....... {{result.character.name}}</span>
+				</li>
+		</ul>
+</div>
+</div>
+</div>

@@ -1,0 +1,34 @@
+
+<div class="search-header">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+
+        <form>
+          <h2 class="v-center" style="color: #efefef;">Search</h2>
+          <p class="lead" style="color: #efefef;">// find a show by name</p>
+
+          <div class="input-group">
+            <input type="text" class="form-control input-md" ng-model = "searchTerm"/>
+            <span class="input-group-btn">
+            	<button
+            		type="submit"
+            		class="btn btn-md btn-warning pull-right" ng-click = "getShows()">
+            		Search
+            	</button>
+            </span>
+          </div>
+          <p ng-show = "showResult.length === 0">
+            <i style="color: #efefef;">no television shows found </i>
+          </p>
+
+        </form>
+
+      </div>
+
+
+    </div>
+		<div shows-directive character = "showResult"> </div>
+  </div>
+</div>

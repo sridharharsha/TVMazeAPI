@@ -1,0 +1,13 @@
+
+<div ng-if = "character">
+	<div class="row character-block" ng-repeat="result in character">
+		<div class="col-xs-6">
+				<img ng-src = "{{result.show.image.medium}}"/>
+		</div>
+		<div class="col-xs-6">
+				<h2 style="color: #efefef;">{{result.show.name}}</h2>
+		  	<p style="color: #efefef;" ng-bind-html = "result.show.summary | trustHTML"></p>
+				<a href = "/shows/{{result.show.id}}" class = "btn btn-warning pull-right">Details</a>
+		</div>
+</div>
+</div>
